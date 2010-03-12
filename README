@@ -1,0 +1,12 @@
+Simple Qype API wrapper. See http://apidocs.qype.com/ for details.
+Ben Dowling - ben@coderholic.com
+
+Example usage:
+
+	q = Qype('YOUR_CONSUMER_KEY')
+
+	places = q.get_locations(53.5532,9.95805)
+
+	place_id = '197584'
+	place_details = q.get_details(place_id)
+	place_reviews = q.get_reviews(place_id) 
