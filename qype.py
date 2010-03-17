@@ -41,7 +41,7 @@ import simplejson as json
 class Qype(object):
     def __init__(self, api_key, timeout = 10):
         self.api_key = api_key
-        self.connection = httplib.HTTPConnection("api.qype.com", timeout)
+        self.connection = httplib.HTTPConnection("api.qype.com", timeout = timeout)
     
     def _request(self, url):
         try:
